@@ -1,1 +1,1 @@
-# Strings Operations
+# String Operations

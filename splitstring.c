@@ -36,7 +36,7 @@ void case_chg(char *s)
    printf("\nDecrypted string is\n");
    for(i=0;i<j;i++)
    {if(isupper(*s)||(islower(*s))
-       *s=*s-n%26;
+       *s=(*s-n)%26;
        printf("%c",*s++);
        }
        }
@@ -45,7 +45,7 @@ void case_chg(char *s)
      char a[50],b; 
    printf("\nEnter the string\n");
 gets(a);
-  printf("enter the char. from where string you want to be split\n);
+  printf("enter the char. from where string you want to be split\n");
  scanf("%c",b);
   split_string(&a[0],b);
   case_chg(&a[0]);
